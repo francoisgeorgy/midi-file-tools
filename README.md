@@ -97,10 +97,10 @@ A map if a file containing one or more lines defining a name for a specific MIDI
 Parsing rules:
 
 - A _blank space_ is defined as a serie of one or more space character or tab character. The two can be mixed.
+- Any blank (space, tab) at the beginning or at the end of the line will be removed.
 - The first blank space is the separator between NOTE-NUMBER and INSTRUMENT-NAME.
 - INSTRUMENT-NAME can includes blank spaces.
 - If INSTRUMENT-NAME begins and ends with doubles quotes, the doubles quotes will be removed.
-- Any blank (space, tab) at the beginning or at the end of the line will be removed.
 - Lines that begin with `//`, `--`, `;` or `#` are comments and will be ignored.
 - Empty lines will be ignored 
 - Any other lines that to not begin with a number will generate an error and the parsing will stop.
