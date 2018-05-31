@@ -1,5 +1,7 @@
 # MIDI file tools
 
+Requirement: **python 3**
+
 ## midi-dump
 
 Dump (print) the content of a MIDI file.
