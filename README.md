@@ -83,4 +83,44 @@ It is possible to choose the mapping for the notes names:
 - midi-tracks : print the tracks used
 - midi-channels : print the channels used; change the channels; for one track, for all tracks
 - midi-transpose : transpose the notes for one channel; for all channels; for one track; for all tracks
+- midi-remap : map a set of note number to another set of note number. Useful for MIDI drum tracks.
 
+## instrument map file format
+
+A map if a file containing one or more lines defining a name for a specific MIDI note number.
+
+    <NOTE-NUMBER> <INSTRUMENT NAME>
+    
+- NOTE-NUMBER must be a number between 0 and 127
+- INSTRUMENT NAME is a string.
+
+Parsing rules:
+
+- A _blank space_ is defined as a serie of one or more space character or tab character. The two can be mixed.
+- The first blank space is the separator between <NOTE-NUMBER> and <INSTRUMENT NAME>.
+- <INSTRUMENT NAME> can includes blank spaces.
+- If <INSTRUMENT NAME> begins and ends with doubles quotes, the doubles quotes will be removed.
+- Any blank (space, tab) at the beginning or at the end of the line will be removed.
+- Lines that begin with `//`, `--`, `;` or `#` are comments and will be ignored.
+- Empty lines will be ignored 
+- Any other lines that to not begin with a number will generate an error and the parsing will stop.
+
+## remapping file format
+
+A re-mapping file is a file containing one or more lines defining a mapping from one MIDI note number to another MIDI note number
+                      
+    <FROM-NOTE-NUMBER> <TO-NOTE-NUMBER> <OPTIONAL-COMMENT>
+                          
+- FROM-NOTE-NUMBER must be a number between 0 and 127
+- TO-NOTE-NUMBER must be a number between 0 and 127
+- OPTIONAL-COMMENT can be anything. Use it to document the mapping.
+
+Parsing rules:
+
+The parsing rules are the same as for the instrument map file.
+
+The only changes are:
+
+- The first blank space is the separator between <FROM-NOTE-NUMBER> and <TO-NOTE-NUMBER>.
+- The second blank space marks the end of <TO-NOTE-NUMBER> and anything after it is ignored.
+ 
