@@ -1,6 +1,10 @@
 # MIDI file tools
 
-Requirement: **python 3**
+Requirements: 
+
+- Python 3
+- [Mido - MIDI Objects for Python](https://mido.readthedocs.io/en/latest/index.html)
+
 
 ## midi-dump
 
