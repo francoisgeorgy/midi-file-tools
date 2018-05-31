@@ -97,13 +97,13 @@ A map if a file containing one or more lines defining a name for a specific MIDI
 Parsing rules:
 
 - A _blank space_ is defined as a serie of one or more space character or tab character. The two can be mixed.
-- Any blank (space, tab) at the beginning or at the end of the line will be removed.
+- Any blank space at the beginning or at the end of the line will be removed.
+- Lines that begin with `//`, `--`, `;` or `#` are comments and will be ignored.
+- Empty lines will be ignored. 
 - The first blank space is the separator between NOTE-NUMBER and INSTRUMENT-NAME.
 - INSTRUMENT-NAME can includes blank spaces.
-- If INSTRUMENT-NAME begins and ends with doubles quotes, the doubles quotes will be removed.
-- Lines that begin with `//`, `--`, `;` or `#` are comments and will be ignored.
-- Empty lines will be ignored 
-- Any other lines that to not begin with a number will generate an error and the parsing will stop.
+- If INSTRUMENT-NAME begins and ends with double quotes, the double quotes will be removed.
+- Any other lines that do not begin with a number will generate an error and the parsing will stop.
 
 ## remapping file format
 
@@ -117,9 +117,7 @@ A re-mapping file is a file containing one or more lines defining a mapping from
 
 Parsing rules:
 
-The parsing rules are the same as for the instrument map file.
-
-The only changes are:
+The parsing rules are the same as for the instrument map file, with the following changes:
 
 - The first blank space is the separator between FROM-NOTE-NUMBER and TO-NOTE-NUMBER.
 - The second blank space marks the end of TO-NOTE-NUMBER and anything after it is ignored.
