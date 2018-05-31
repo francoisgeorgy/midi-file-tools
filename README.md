@@ -71,6 +71,7 @@ It is possible to choose the mapping for the notes names:
 - `-m inst` for GM Level 1 Instruments
 - `-m perc` for GM Level 1 Percussions
 
+
     $ ./midi-notes.py Verse-1.mid -m perc
     36 Bass Drum 1
     38 Acoustic Snare
