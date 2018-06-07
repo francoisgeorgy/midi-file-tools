@@ -3,6 +3,7 @@
 
 import argparse
 import mido
+# from mido import MetaMessage
 
 parser = argparse.ArgumentParser()
 parser.add_argument("files", nargs="*")
