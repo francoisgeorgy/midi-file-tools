@@ -98,10 +98,15 @@ This is especially useful for MIDI drum tracks where, often, the drum notes and 
 
 # TODO:
 
-- midi-tracks : print the tracks used
+- midi-tracks : print the tracks used; delete a track; copy a track with another channel
 - midi-channels : print the channels used; change the channels; for one track, for all tracks
 - midi-transpose : transpose the notes for one channel; for all channels; for one track; for all tracks
-- midi-remap : map a set of note number to another set of note number. Useful for MIDI drum tracks.
+    - transpose by a fixed number of semitones
+    - transpose by an interval (alias of number of semitones)
+    - transpose by an interval, according to a scale and a root (e.g. will correctly choose major 3rd or minor 3rd)
+- midi-double: double the notes with the same possibilities as for the transposition
+- midi-chords: change notes to chords, according to a scale and a root
+
 
 ## instrument map file format
 
