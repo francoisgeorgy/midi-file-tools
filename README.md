@@ -1,9 +1,14 @@
 # MIDI file tools
 
-Requirements:   
+### Requirements:   
 
 - Python 3
 - [Mido - MIDI Objects for Python](https://mido.readthedocs.io/en/latest/index.html)
+
+
+### Motivation:
+
+These tools helps me convert MIDI files from ezDrummer to Yamaha DTX format. If they are useful for you, I'm happy :-) 
 
 
 ## midi-dump
@@ -47,6 +52,7 @@ Change the name of all tracks of a MIDI file.
     105 Verse 1 --> Verse 1
     105 Verse 1 --> Verse 1
 
+
 ## midi-notes
 
 Print the list of notes found in the MIDI file.
@@ -77,6 +83,18 @@ It is possible to choose the mapping for the notes names:
     38 Acoustic Snare
     42 Closed Hi Hat
     49 Crash Cymbal 1
+
+
+## midi-remap
+
+Change note numbers according to a provided _map_.
+
+This tool also provides the possibility to change the channel of the remapped notes.
+
+This is especially useful for MIDI drum tracks where, often, the drum notes and channel do not respect the GM standard. 
+
+    $ ./midi-remap.py maps/test-map file01.mid -c 10
+
 
 # TODO:
 
