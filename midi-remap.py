@@ -6,6 +6,7 @@
 import argparse
 import mido
 from mapping.utils import read_remap
+from utils.misc import suffixFilename
 
 
 parser = argparse.ArgumentParser()
@@ -44,11 +45,10 @@ for f in args.file:
                 if m['from'] == msg.note:
                     msg.note = m['to']
 
-    #TODO: generate name for new file
+    nf = suffixFilename(f, '_remapped')
+    print(f, '-->', nf)
 
-    # debug:
-    mid.save('test.mid')
-    break
+    mid.save(nf)
 
 
 

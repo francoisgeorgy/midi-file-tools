@@ -3,6 +3,7 @@
 
 import argparse
 from pathlib import Path
+from utils.misc import suffixFilename
 import mido
 
 parser = argparse.ArgumentParser()
@@ -72,7 +73,8 @@ for f in args.files:
 
     new_mid.tracks.append(new_track)
 
-    nf = Path(f).parent.joinpath(Path(f).stem + '_dtx' + Path(f).suffix)
+    #nf = Path(f).parent.joinpath(Path(f).stem + '_dtx' + Path(f).suffix)
+    nf = suffixFilename(f, '_dtx')
     print(f, '-->', nf)
 
     new_mid.save(nf)
