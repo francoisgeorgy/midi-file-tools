@@ -31,6 +31,8 @@ def read_remap(file):
     remap = []
     for line in read_lines(file):
         parts = line.split(' ', 2)
+        if parts[0] == parts[1]:
+            continue    # ignore identity mapping
         try:
             remap.append({
                 'from': int(parts[0]),

@@ -1,0 +1,74 @@
+# Mapping from EZdrummer 2 Modern to Yamaha DTX-400
+
+# THIS MAPPING IS NOT DONE YET.
+
+# Snare
+#     Head shots D1 38
+#     Open rim shots (Rim 1) E1 40
+#     Closed rim shots (Rim 2) C#1 37
+# Toms
+#     First tom pad C2 48
+#     Second tom pad B1 47
+#     Third tom pad G1 43
+# Ride cymbal D#2 51
+# Crash cymbal C#2 49
+# Hi-hats
+#     Open A#1 46
+#     Closed F#1 42
+#     Foot close G#1 44
+#     Splash B4 83
+# Kick C1 36
+
+# DTX400 notes: 36 37 38 40 42 43 44 46 47 48 49 51 83
+
+
+36 36 [Kick] Hit --> Bass Drum 1
+37 37 Sidestick --> Side Stick
+38 38 Snare Center --> Acoustic Snare
+40 40 Snare Rimshot --> Electric Snare
+41 41 [Floortom 2] Center --> Low Floor Tom
+42 42 [HH]GM Closed --> Closed Hi Hat
+
+65 42 [Hi-Hat] --> Closed Hi Hat
+64 42 [Hi-Hat] --> Closed Hi Hat
+63 42 [Hi-Hat] --> Closed Hi Hat
+62 42 [Hi-Hat] --> Closed Hi Hat
+61 42 [Hi-Hat] --> Closed Hi Hat
+22 42 [Hi-Hat] --> Closed Hi Hat
+21 42 [Hi-Hat] --> Closed Hi Hat
+20 42 [Hi-Hat] --> Closed Hi Hat
+
+43 43 Floor Tom 1 Center --> High Floor Tom
+41 43 Floor Tom 2 Center --> High Floor Tom
+
+44 44 HH GM Pedal --> Pedal Hi-Hat
+
+60 46 HH Open Max --> Open Hi-Hat
+26 46 HH Open Max --> Open Hi-Hat
+25 46 HH Open Max --> Open Hi-Hat
+24 46 HH Open Max --> Open Hi-Hat
+23 46 HH Open Max --> Open Hi-Hat
+46 46 Open Hi-Hat
+
+47 47 Rack Tom 2 Center --> Low-Mid Tom
+
+48 48 Rack Tom 1 Center --> Hi-Mid Tom
+
+49 49 Crashed --> Crash Cymbal 1
+
+51 51 Ride Bow --> Ride Cymbal 1
+53 51 Ride Bell --> Ride Cymbal 1
+59 51 Ride Edge --> Ride Cymbal 1
+
+32 51 Cymbal 3 --> Ride Cymbal 1
+58 51 Cymbal 3 --> Ride Cymbal 1
+57 51 Cymbal 3 --> Ride Cymbal 1
+
+28 51 Cymbal 2 --> Ride Cymbal 1
+50 51 Cymbal 2 --> Ride Cymbal 1
+49 51 Cymbal 2 --> Ride Cymbal 1
+
+52 51 Cymbal 4 --> Ride Cymbal 1
+54 51 Cymbal 4 --> Ride Cymbal 1
+
+56 51 Cymbal 1 --> Ride Cymbal 1
