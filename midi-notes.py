@@ -7,32 +7,40 @@
 import argparse
 import mido
 from mapping.maps import midi_map
+from mapping.utils import read_map
 
 parser = argparse.ArgumentParser()
 parser.add_argument("files", nargs="*")
 parser.add_argument("-m", "--map", dest="mapping", choices=["inst", "perc"], metavar="MAP", help="set the mapping to use for the notes names. Must be inst or perc.")
+parser.add_argument("-mf", "--mapfile", dest="mapping_file", metavar="MAPFILE", help="name of the file defining the mapping to use for the notes names.")
 args = parser.parse_args()
 
-if args.mapping is None:
-    mapping = midi_map["GM_Level-1_Instruments"]
-elif args.mapping == "inst":
-    mapping = midi_map["GM_Level-1_Instruments"]
-elif args.mapping == "perc":
-    mapping = midi_map["GM_Level-1_Percussions"]
+if args.mapping_file:
+    mapping = read_map(args.mapping_file)
 else:
-    print("invalid mapping")
-    exit()
+    if args.mapping is None:
+        mapping = midi_map["GM_Level-1_Instruments"]
+    elif args.mapping == "inst":
+        mapping = midi_map["GM_Level-1_Instruments"]
+    elif args.mapping == "perc":
+        mapping = midi_map["GM_Level-1_Percussions"]
+    else:
+        print("invalid mapping")
+        exit()
 
 multiple_files = len(args.files) > 1
 
 notes = []
 
 for f in args.files:
+
     if multiple_files:
         print("::::::::::::::")
         print(f)
         print("::::::::::::::")
+
     mid = mido.MidiFile(f)
+
     for track in mid.tracks:
         for msg in track:
             if msg.is_meta:

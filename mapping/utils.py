@@ -42,3 +42,15 @@ def read_remap(file):
         except ValueError:
             print("ERROR: invalid value in '%s'" % line)
     return remap
+
+# read a file describing a mapping between note numbers and notes names
+def read_map(file):
+    m = {}
+    for line in read_lines(file):
+        parts = line.split(' ', 1)
+        try:
+            m[int(parts[0])] = parts[1];
+        except ValueError:
+            print("ERROR: invalid value in '%s'" % line)
+
+    return m

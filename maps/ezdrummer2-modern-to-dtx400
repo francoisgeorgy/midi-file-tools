@@ -22,53 +22,47 @@
 # DTX400 notes: 36 37 38 40 42 43 44 46 47 48 49 51 83
 
 
-36 36 [Kick] Hit --> Bass Drum 1
-37 37 Sidestick --> Side Stick
-38 38 Snare Center --> Acoustic Snare
-40 40 Snare Rimshot --> Electric Snare
-41 41 [Floortom 2] Center --> Low Floor Tom
-42 42 [HH]GM Closed --> Closed Hi Hat
+# Source for the EZD note number and note name: Reaper drump map
 
-65 42 [Hi-Hat] --> Closed Hi Hat
-64 42 [Hi-Hat] --> Closed Hi Hat
-63 42 [Hi-Hat] --> Closed Hi Hat
-62 42 [Hi-Hat] --> Closed Hi Hat
-61 42 [Hi-Hat] --> Closed Hi Hat
-22 42 [Hi-Hat] --> Closed Hi Hat
-21 42 [Hi-Hat] --> Closed Hi Hat
-20 42 [Hi-Hat] --> Closed Hi Hat
+83	51  Ride Muted
+82	48  Racktom 1 Rimshot
+80	47  Racktom 2 Rimshot
+78	43  Racktom 3 Rimshot
+75	43  Floortom 1 Rimshot
+73	43  Floortom 2 Rimshot
+65	42  Hats Seq Hits
+63	42  Hats Tight Tip
+62	42  Hats Tight Edge
+61	42  Hats Closed Tip
+60	46  Hats Open Max
+59	51  Ride Edge
+58	51  Cymbal 3 Muted
+57	51  Cymbal 3 Crashed
+56	51  Cymbal 1 Muted
+55	51  Cymbal 1 Crashed
+54	51  Cymbal 4 Muted
+53	51  Ride Bell
+52	51  Cymbal 4 Crashed
+51	51  Ride Bow
+50	51  Cymbal 2 Muted
+49	51  Cymbal 2 Crashed
+48	48  Racktom 1
+47	47  Racktom 2
+46	46  Hats Open
+45	43  Racktom 3
+44	44  Hats Pedal
+43	43  Floortom 1
+42	42  Hats Closed
+41	43  Floortom 2
+40	40  Rimshot
+38	38  Snare
+37	37  Sidestick
+36	36  Kick
+26	46  Hats Open 3
+25	46  Hats Open 2
+24	46  Hats Open 1
+23	46  Open Pedal
+22	42  Closed Edge
+21	42  Closed Pedal
+# 20	CC Variable
 
-43 43 Floor Tom 1 Center --> High Floor Tom
-41 43 Floor Tom 2 Center --> High Floor Tom
-
-44 44 HH GM Pedal --> Pedal Hi-Hat
-
-60 46 HH Open Max --> Open Hi-Hat
-26 46 HH Open Max --> Open Hi-Hat
-25 46 HH Open Max --> Open Hi-Hat
-24 46 HH Open Max --> Open Hi-Hat
-23 46 HH Open Max --> Open Hi-Hat
-46 46 Open Hi-Hat
-
-47 47 Rack Tom 2 Center --> Low-Mid Tom
-
-48 48 Rack Tom 1 Center --> Hi-Mid Tom
-
-49 49 Crashed --> Crash Cymbal 1
-
-51 51 Ride Bow --> Ride Cymbal 1
-53 51 Ride Bell --> Ride Cymbal 1
-59 51 Ride Edge --> Ride Cymbal 1
-
-32 51 Cymbal 3 --> Ride Cymbal 1
-58 51 Cymbal 3 --> Ride Cymbal 1
-57 51 Cymbal 3 --> Ride Cymbal 1
-
-28 51 Cymbal 2 --> Ride Cymbal 1
-50 51 Cymbal 2 --> Ride Cymbal 1
-49 51 Cymbal 2 --> Ride Cymbal 1
-
-52 51 Cymbal 4 --> Ride Cymbal 1
-54 51 Cymbal 4 --> Ride Cymbal 1
-
-56 51 Cymbal 1 --> Ride Cymbal 1
