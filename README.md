@@ -11,6 +11,28 @@
 These tools helps me convert MIDI files from ezDrummer to Yamaha DTX format. If they are useful for you, I'm happy :-) 
 
 
+## midi-probe
+
+Display the general structure of a MIDI file.
+
+    $ ./midi-probe.py test-data/multi-tracks-1.mid
+    track 0
+       name: 
+       notes: []
+       channels: []
+    track 1
+       name: Intro
+       inst: Drums
+       notes: [36, 38, 40, 44, 46, 47, 49, 57]
+       channels: [0]
+    track 2
+       name: Couplet
+       inst: Drums
+       notes: [33, 36, 38, 40, 43, 45, 47, 48, 49, 57]
+       channels: [0]
+    ...
+
+
 ## midi-dump
 
 Dump (print) the content of a MIDI file.
